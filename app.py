@@ -17,6 +17,15 @@ from routes import router
 # Agregar las rutas a la aplicación
 app.use(router)
 
+
+def application(req, res):
+    """Despliegue de la aplicación
+
+    Interface entre WSGI y la aplicación, utiliza passenger_wsgi.py
+    """
+    return app.application(req, res)
+
+
 if __name__ == "__main__":
     # Create web server
     app.listen(

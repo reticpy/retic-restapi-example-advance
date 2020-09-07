@@ -1,4 +1,4 @@
 # requiremets.txt
 
-retic==0.0.15
+retic==0.1.0
 requests==2.24.0
